@@ -308,32 +308,34 @@ body {
 }
 
 /* Video box styling */
-.about-section .about-video video {
+.about-section .about-video video,
+.about-section .about-video iframe {
   width: 100%;
-  height: 340px; /* taller height for YouTube-style video */
+  height: 400px;          /* increased from 340px (just +60px) */
   border-radius: 12px;
-  border: 4px dashed #00ffd5; /* outline to show video box */
-  box-shadow: 0 0 25px rgba(0, 255, 213, 0.25); /* subtle glow */
-  object-fit: cover; /* fill box proportionally */
+  border: 4px dashed #00ffd5;
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.25);
+  object-fit: cover;      /* for video; iframe ignores this but fine */
 }
 
 /* Responsive for About Section */
 @media (max-width: 900px) {
   .about-section .about-content {
-    flex-direction: column; /* stack text + video */
+    flex-direction: column;
     text-align: center;
   }
 
   .about-section .about-text {
-    text-align: center; /* center text on mobile */
+    text-align: center;
   }
 
   .about-section .about-video {
     margin-top: 30px;
   }
 
-  .about-section .about-video video {
-    height: 250px; /* smaller on mobile */
+  .about-section .about-video video,
+  .about-section .about-video iframe {
+    height: 280px;        /* increased from 250px (just +30px) */
   }
 }
 
@@ -814,4 +816,6 @@ body {
   opacity: 0.7;
   margin-top: 5px;
 }
+
+
 

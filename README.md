@@ -23,8 +23,8 @@ Hi, I'm **Tonmoy Chakrabarty Joy** 👋
 
 ### 💻 Frontend
 
-* 🌐 HTML5
-* 🎨 CSS3
+* 🌐 HTML
+* 🎨 CSS
 * ⚡ JavaScript
 
 ### 🧩 Tools & Platforms
